@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiSamples.Views.pagePopUp"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="pagePopUp">
+    <VerticalStackLayout Margin="20" Spacing="20">
+        <Button
+            x:Name="btnPopUp1"
+            Clicked="btnPopUp1_Clicked"
+            Text="Popup Sample" />
+        <Button
+            x:Name="btnPopUpYesNo"
+            Clicked="btnPopUpYesNo_Clicked"
+            Text="Confirm PopUp" />
+        <Button
+            x:Name="btnPopUpForm"
+            Clicked="btnPopUpForm_Clicked"
+            Text="Form PopUp" />
+
+        <Button
+            x:Name="btnPopUpLoading"
+            Clicked="btnPopUpLoading_Clicked"
+            Text="Loading PopUp" />
+    </VerticalStackLayout>
+</ContentPage>

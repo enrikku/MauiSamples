@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiSamples.Views.Barcode.pageCreateBarcode"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:zxing="clr-namespace:ZXing.Net.Maui.Controls;assembly=ZXing.Net.MAUI.Controls"
+    Title="pageCreateBarcode">
+    <VerticalStackLayout>
+
+        <Picker
+            x:Name="pickerFormat"
+            Title="Format"
+            Margin="3"
+            SelectedIndex="0"/>
+        <Entry
+            x:Name="entryValue"
+            Margin="3"
+            Placeholder="Value" />
+
+        <Button
+            x:Name="buttonGenerate"
+            Margin="3"
+            Clicked="buttonGenerate_Clicked"
+            Text="Generate" />
+
+        <zxing:BarcodeGeneratorView
+            x:Name="barcodeGeneratorView"
+            Margin="3"
+            Format="QrCode"
+            HeightRequest="200"
+            WidthRequest="400"
+            Value="https://github.com/enrikku/MauiSamples" />
+    </VerticalStackLayout>
+</ContentPage>

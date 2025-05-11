@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<toolkit:Popup
+    x:Class="MauiSamples.Views.ToDo.PopUps.PopUpToDoItem"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    Size="300,200">
+
+    <VerticalStackLayout
+        Padding="20"
+        Background="White"
+        Spacing="15">
+        <Label
+            FontSize="18"
+            HorizontalOptions="Center"
+            Text="Enter ToDo Name"
+            TextColor="Black" />
+        <Entry
+            x:Name="entryToDoName"
+            Loaded="entryToDoName_Loaded"
+            Placeholder="e.g. Buy groceries" />
+        <Button
+            x:Name="btnAction"
+            Clicked="OnAddClicked"
+            Text="Add" />
+    </VerticalStackLayout>
+</toolkit:Popup>

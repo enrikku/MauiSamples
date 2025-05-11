@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiSamples.pageBarcode"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="pageBarcode"
+    Background="Black">
+    <VerticalStackLayout Margin="20" Spacing="20">
+        <Button
+            x:Name="btnRead"
+            Clicked="btnRead_Clicked"
+            Text="Read Barcode" />
+        <Button
+            x:Name="btnCreate"
+            Clicked="btnCreate_Clicked"
+            Text="Create Barcode" />
+
+        <Label
+            FontSize="Large"
+            HorizontalOptions="CenterAndExpand"
+            Text="Supported formats"
+            TextColor="White" />
+        <ListView
+            x:Name="BarcodeFormatsList"
+            BackgroundColor="Transparent"
+            HeightRequest="400">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Label
+                            Padding="10,5"
+                            FontSize="16"
+                            Text="{Binding}"
+                            TextColor="White" />
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+
+
+
+
+
+    </VerticalStackLayout>
+</ContentPage>
